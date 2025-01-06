@@ -1,27 +1,45 @@
-Organização Semântica de Conjuntos Musicais com Inteligência Artificial 🎵🤖
-Este projeto é uma aplicação de inteligência artificial voltada para a organização semântica de grandes acervos musicais. Com a crescente disponibilidade de músicas em plataformas digitais, tornou-se desafiador para os usuários explorar e descobrir novas faixas que realmente atendam às suas preferências. Essa aplicação propõe uma solução inovadora, combinando aprendizado de máquina e análise musical para criar uma experiência personalizada e eficiente.
+# Organização Semântica de Conjuntos Musicais com Inteligência Artificial 🎵🤖
 
-🧠 Como funciona
-Extração de características musicais:
-Utilizando a API do Spotify, a aplicação coleta dados detalhados de faixas, como dançabilidade, energia, acústica e valência. Essas informações representam as propriedades únicas de cada música.
+Este repositório apresenta uma aplicação de Inteligência Artificial projetada para organizar semanticamente grandes acervos musicais. Com o aumento exponencial de conteúdo em plataformas digitais, este projeto visa proporcionar uma experiência personalizada e eficiente para os usuários explorarem e descobrirem novas músicas.
 
-Processamento de dados:
-Os dados coletados passam por técnicas de normalização e são estruturados em um DataFrame para análise. Para agrupar faixas semelhantes, foi utilizado o algoritmo K-Means para clustering.
+## 🔄 Fluxo de Trabalho
 
-Modelos de aprendizado supervisionado:
-Modelos como DecisionTree, RandomForest e XGBoost são treinados para identificar padrões nas características musicais e oferecer recomendações com alta precisão.
+### 1. **Extração de Características Musicais**
+A API do Spotify é utilizada para coletar dados detalhados das músicas, como:
+- **Dançabilidade**
+- **Energia**
+- **Acústica**
+- **Valência**
 
-Geração de recomendações:
-O sistema classifica músicas em grupos semânticos e identifica aquelas mais próximas das preferências do usuário, permitindo a criação de playlists altamente personalizadas.
+Essas características representam as propriedades únicas de cada faixa, formando a base para o processamento.
 
-🎯 Resultados
-O modelo XGBoost destacou-se como o mais eficiente, atingindo alta acurácia na classificação e recomendação de músicas. A abordagem melhora a experiência de exploração musical, proporcionando recomendações relevantes e conectando o usuário a faixas alinhadas aos seus gostos.
+### 2. **Processamento de Dados**
+Os dados passam por normalização e são estruturados em um DataFrame para facilitar a análise. Foi utilizado o algoritmo **K-Means** para agrupar músicas com características semelhantes em clusters.
 
-🔧 Tecnologias utilizadas
-Linguagem: Python
-Bibliotecas: Scikit-learn, XGBoost, Pandas, NumPy
-Ferramentas: API do Spotify, Google Colab
-🚀 Objetivos futuros
-Expandir o modelo para outros contextos musicais e incluir mais características sonoras, como timbre e textura, além de realizar validações com usuários reais para refinar a experiência.
+### 3. **Modelos de Aprendizado Supervisionado**
+Modelos como **DecisionTree**, **RandomForest** e **XGBoost** foram implementados para identificar padrões nas características das músicas e oferecer recomendações precisas. O **XGBoost** destacou-se pela alta acurácia e robustez.
 
-Esse trabalho reforça a interseção entre tecnologia e música, mostrando como a IA pode transformar a forma como interagimos com nossas bibliotecas digitais. 🎶
+### 4. **Geração de Recomendações**
+Com base nos clusters gerados e nos padrões identificados pelos modelos, o sistema recomenda faixas similares às preferências do usuário, permitindo a criação de playlists personalizadas.
+
+## 🔬 Resultados
+- **Modelo XGBoost**: Melhor desempenho, com alta precisão na classificação e recomendação de músicas.
+- **Recomendações Relevantes**: Melhoraram a experiência do usuário ao oferecer músicas alinhadas às suas preferências.
+
+## 🛠️ Tecnologias Utilizadas
+- **Linguagem**: Python
+- **Bibliotecas**: 
+  - Scikit-learn
+  - XGBoost
+  - Pandas
+  - NumPy
+- **Ferramentas**:
+  - API do Spotify
+  - Google Colab
+
+## 🚀 Objetivos Futuros
+- Expandir o modelo para outros contextos musicais e culturas.
+- Incorporar atributos adicionais, como timbre e textura.
+- Realizar validações com usuários reais para refinar a experiência.
+
+Este projeto combina a riqueza cultural da música com avanços tecnológicos, mostrando como a Inteligência Artificial pode transformar a forma como interagimos com nossas bibliotecas digitais. 🎶
